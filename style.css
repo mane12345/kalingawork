@@ -1,0 +1,83 @@
+.fab {
+  background-color: teal;
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  border-radius: 50%;
+  border-color: transparent;
+  box-shadow: 0px 4px grey; }
+
+.myfab {
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  background-color: transparent; }
+
+.myfab:hover {
+  height: 250px; }
+  .myfab:hover .fab {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition-duration: .2s;
+    background-color: teal; }
+  .myfab:hover .phone {
+    -webkit-transform: translateY(85px);
+    transform: translateY(85px);
+    transition-duration: 2s;
+    transition-delay: .1s; }
+  .myfab:hover .text {
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
+    transition-duration: 2s;
+    transition-delay: .1s; }
+  .myfab:hover .mail {
+    -webkit-transform: translateY(220px);
+    transform: translateY(220px);
+    transition-duration: 2s;
+    transition-delay: .1s; }
+
+.phone {
+  background-color: ghostwhite;
+  color: black;
+  font-size: 1.5em;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: lightgrey;
+  margin: auto;
+  border-color: transparent;
+  box-shadow: 0px 4px grey;
+  position: absolute;
+  left: 11px; }
+
+.text {
+  background-color: ghostwhite;
+  color: black;
+  font-size: 1.5em;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: lightgrey;
+  margin: auto;
+  border-color: transparent;
+  box-shadow: 0px 4px grey;
+  position: absolute;
+  left: 11px; }
+
+.mail {
+  background-color: ghostwhite;
+  color: black;
+  font-size: 1.5em;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: lightgrey;
+  margin: auto;
+  border-color: transparent;
+  box-shadow: 0px 4px grey;
+  position: absolute;
+  left: 11px; }

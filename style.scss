@@ -1,0 +1,81 @@
+$width: 50px;
+$height: 50px;
+.fab {
+    background-color: teal;
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    border-radius: 50%;
+    border-color: transparent;
+    box-shadow: 0px 4px grey;
+}
+
+.myfab {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.myfab:hover {
+    height: 250px;
+    .fab {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transition-duration: .2s;
+        background-color: teal;
+    }
+    .phone {
+        -webkit-transform: translateY(85px);
+        transform: translateY(85px);
+        transition-duration: 2s;
+        transition-delay: .1s;
+    }
+    .text {
+        -webkit-transform: translateY(85px);
+        transform: translateY(85px);
+        transition-duration: 2s;
+        transition-delay: .1s;
+    }
+    .mail {
+        -webkit-transform: translateY(85px);
+        transform: translateY(85px);
+        transition-duration: 2s;
+        transition-delay: .1s;
+    }
+}
+
+@mixin buttons {
+    background-color: ghostwhite;
+    color: black;
+    font-size: 1.5em;
+    height: $height;
+    width: $width;
+    border-radius: 50%;
+    border-color: lightgrey;
+    margin: auto;
+    border-color: transparent;
+    box-shadow: 0px 4px grey;
+}
+
+.phone {
+    @include buttons;
+    position: absolute;
+    left: 11px;
+}
+
+.text {
+    @include buttons;
+    position: absolute;
+    left: 11px;
+}
+
+.mail {
+    @include buttons;
+    position: absolute;
+    left: 11px;
+}
